@@ -1,0 +1,26 @@
+# Docker version to use
+version: '3'
+
+services:
+# nazwa własna
+  web:
+    build:
+    # context determines location for dockerfile path
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - "8080:80"
+    # decides where to locate project files on server
+    volumes:
+      - .:/app/
+    # determines what services should be linked to our "web" service 
+    links:
+      - php
+
+  # nazwa własna
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/app/
