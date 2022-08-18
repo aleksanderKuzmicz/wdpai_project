@@ -1,0 +1,9 @@
+Zrobione:
+    login page - laptop, mobile
+    reviews page - laptop
+    routing for them
+
+TODO:
+    1 - other views like 'people', 'guide', 'settings'
+    2 - mobile version for reviews
+    3 - other routings
