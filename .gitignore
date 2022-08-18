@@ -1,1 +1,9 @@
-todo.txt
+# IDE
+.idea
+.vscode
+
+# Python
+**/__pyache__
+venv
+
+TODO.txt
