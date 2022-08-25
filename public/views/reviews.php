@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="public/css/page_reviews_style.css">
-    <link rel="stylesheet" type="text/css" href="public/css/reviews_style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/page_reviews/page_reviews.css">
+    <link rel="stylesheet" type="text/css" href="public/css/page_reviews/section_reviews.css">
     <script src="https://kit.fontawesome.com/36e2e0d045.js" crossorigin="anonymous"></script>
     <title>Reviews</title>
 
@@ -50,7 +50,7 @@
             </header>
             <section class="reviews">
                 <div id="review-1">
-                    <img src="public/img/uploads/boots.png">
+                    <img src="public/img/uploads/clothes/boots.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div id="review-2">
-                    <img src="public/img/uploads/jacket.png">
+                    <img src="public/img/uploads/clothes/jacket.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div id="review-3">
-                    <img src="public/img/uploads/helmet-mirror.png">
+                    <img src="public/img/uploads/clothes/helmet-mirror.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div id="review-4">
-                    <img src="public/img/uploads/gloves.png">
+                    <img src="public/img/uploads/clothes/gloves.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div id="review-5">
-                    <img src="public/img/uploads/helmet-enduro.png">
+                    <img src="public/img/uploads/clothes/helmet-enduro.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div id="review-6">
-                    <img src="public/img/uploads/protectors.png">
+                    <img src="public/img/uploads/clothes/protectors.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>

@@ -13,4 +13,8 @@ class DefaultController extends AppController {
         // TODO display projects.html
         $this->render('reviews');
     }
+
+    public function people() {
+        $this->render('people');
+    }
 }

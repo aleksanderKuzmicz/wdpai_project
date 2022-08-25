@@ -23,7 +23,7 @@ class Routing {
 
         $controller_name = self::$routes[$action];
         $controller_obj = new $controller_name;
-        $action = $action ?: 'index'; // for handling "localhost:.../"
+        $action = $action ?: 'index'; # for handling "localhost:8080/" - empty 'action'
         $controller_obj->$action();
     }
 
