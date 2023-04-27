@@ -5,7 +5,7 @@ body {
 .container {
     width: 100vw;
     height: 100vh;
-    background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #000c2e, #000c2e 50%, #1e2231 100%) 0% 0% no-repeat padding-box;
 
     display: flex;
     flex-direction: column;
@@ -37,7 +37,9 @@ form.login-form {
     height:40vh;
 
     /* from xd */
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    /* background: #FFFFFF 0% 0% no-repeat padding-box; */
+    background: #f0dada 0% 0% no-repeat padding-box;
+
     box-shadow: inset 5px 5px 6px #00000029, 7px 7px 6px #00000029;
     border-radius: 36px;
     opacity: 0.84;
@@ -61,7 +63,7 @@ form.login-form {
     line-height: 2.5em;
     
     /* from xd */
-    background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box;
+    background: #1e2231; /*linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
     box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
     border-radius: 12px;
     

@@ -8,13 +8,20 @@ body {
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
+    background: #1e2231;
 
 }
 
+.logo-img {
+    height: 5em;
+    margin-bottom: 3em;
+}
+
 nav {
-    width: 20vw;
+    width: 15vw;
     height: 100%;
-    background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box;
+    /* background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
+    background: transparent linear-gradient(180deg, #000c2e, #000C2E 50%, #1e2231 100%) 0% 0% no-repeat padding-box;
 
     display: flex;
     flex-direction: column;
@@ -23,7 +30,7 @@ nav {
 }
 
 main {
-    width: 80vw;
+    width: 85vw;
     height: 100%;
 }
 
@@ -32,21 +39,22 @@ nav > img {
     margin: 1em auto;
 }
 
+li > i {
+    font-size: 1.5em;
+}
+
 a {
     text-decoration: none;
     display: inline-block;
     line-height: 2em;
 }
 
-li > i {
-    font-size: 1.5em;
-}
-
 .nav-button {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 1em;
     margin-left: 1em;
-    text-align: center;
+    /* text-align: center; */
+    text-align: left;
     letter-spacing: 0.5px;
     color: white;
     padding: 0.2em;
@@ -56,7 +64,6 @@ li > i {
 ul {
     list-style-type: none;
     color: white;
-    
     letter-spacing: 0px;
     height: 100%;
     margin: 0 auto;
@@ -94,21 +101,22 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 1em 2em;
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
 }
 
 .add-review {
-    background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box;
-    box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
-    border-radius: 1.6em;
+    /* background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
+    /* background: #1e2231; */
+    /* box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029; */
+    /* border-radius: 1.6em; */
     color: white;
-    letter-spacing: 0.1em;
+    /* letter-spacing: 0.1em; */
     padding: 0.5em;
-    width: 15%;
+    width: 10%;
     text-align: center;
-    display: flex;
+    /* display: flex; */
     align-items: center;
-    justify-content: space-evenly; 
+    /* justify-content: space-evenly;  */
     line-height: 2em;
 
 }

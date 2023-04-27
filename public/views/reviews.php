@@ -9,7 +9,7 @@
 <body>
     <div class="base-container">
         <nav>
-            <img src="public/img/logo.svg">
+            <img class="logo-img" src="public/img/logo-no-background.svg">
             <ul>
                 <li>
                     <i class="fa-solid fa-rectangle-list"></i>
@@ -43,7 +43,8 @@
 
                 </div>
                 <div class="add-review">
-                    <i class="fa-solid fa-plus"></i>Add review
+                    <i class="fa-solid fa-plus"></i>
+                    <a href='#' class="nav-button">Add review</a>
 
                 </div>
 

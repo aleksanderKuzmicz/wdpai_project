@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <script src="https://kit.fontawesome.com/36e2e0d045.js" crossorigin="anonymous"></script>
     <title>
-        Login page
+        Gosafe login
     </title>
 
 </head>
 <body>
     <div class="container">
         <div class="logo-container">
-            <img class="logo-img" src="public/img/logo.svg">
+            <img class="logo-img" src="public/img/logo-no-background.svg">
         </div>
         <div class="login-container">
             <form class="login-form" action="login" method="POST">
                 <div class="messages">
                     <?php
+                        // remake to object method. Project must be OOP
                         if(isset($messages)) {
                             foreach ($messages as $message) {
                                 echo $message;

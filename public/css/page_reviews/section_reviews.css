@@ -24,7 +24,7 @@
 .description-container {
     height: 50%;
     width: 100%;
-    background: transparent linear-gradient(180deg, #920808 0%, #000C2E 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #000c2e 0%, #1e2231 100%) 0% 0% no-repeat padding-box;
 }
 
 .review-description {
