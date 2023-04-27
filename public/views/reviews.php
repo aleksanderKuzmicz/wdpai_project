@@ -12,24 +12,34 @@
             <img class="logo-img" src="public/img/logo-no-background.svg">
             <ul>
                 <li>
-                    <i class="fa-solid fa-rectangle-list"></i>
-                    <a href='#' class="nav-button">Reviews</a>
+                    <a href='#' class="nav-button">
+                        <i class="fa-solid fa-rectangle-list"></i>
+                        <span class="nav-button-text">Reviews</span>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-user-group"></i>
-                    <a href='#' class="nav-button">People</a>
+                    <a href='#' class="nav-button">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span class="nav-button-text">People</span>
+                </a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-shirt"></i>
-                    <a href='#' class="nav-button">Guide</a>
+                    <a href='#' class="nav-button">
+                        <i class="fa-solid fa-shirt"></i>
+                        <span class="nav-button-text">Guide</span>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-bell"></i>
-                    <a href='#' class="nav-button">Notifications</a>
+                    <a href='#' class="nav-button">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="nav-button-text">Notifications</span>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-gear"></i>
-                    <a href='#' class="nav-button">Settings</a>
+                    <a href='#' class="nav-button">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="nav-button-text">Settings</span>
+                    </a>
                 </li>
             </ul>
 
