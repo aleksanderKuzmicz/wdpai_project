@@ -20,7 +20,7 @@
                 <li>
                     <a href='#' class="nav-button">
                         <i class="fa-solid fa-user-group"></i>
-                        <span class="nav-button-text">People</span>
+                        <span class="nav-button-text">Community</span>
                 </a>
                 </li>
                 <li>
@@ -53,87 +53,126 @@
 
                 </div>
                 <div class="add-review">
-                    <i class="fa-solid fa-plus"></i>
-                    <a href='#' class="nav-button">Add review</a>
+                    
+                    <a href='#' class="nav-button">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="nav-button-text">Add review</span>
+                    </a>
 
                 </div>
 
             </header>
             <section class="reviews">
-                <div id="review-1">
+                <div class="review" id="review-1">
                     <img src="public/img/uploads/clothes/boots.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">
-                                <i class="fa-solid fa-heart"> 600</i>
-                                <i class="fa-solid fa-square-minus"> 120</i>
+                                <div class="review-likes">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>600</span>
+                                </div>
+                                <div class="review-comments">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                    <span>120</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="review-2">
+                <div class="review" id="review-2">
                     <img src="public/img/uploads/clothes/jacket.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">
-                                <i class="fa-solid fa-heart"> 600</i>
-                                <i class="fa-solid fa-square-minus"> 120</i>
+                                <div class="review-likes">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>600</span>
+                                </div>
+                                <div class="review-comments">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                    <span>120</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="review-3">
+                <div class="review" id="review-3">
                     <img src="public/img/uploads/clothes/helmet-mirror.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">
-                                <i class="fa-solid fa-heart"> 600</i>
-                                <i class="fa-solid fa-square-minus"> 120</i>
+                                <div class="review-likes">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>600</span>
+                                </div>
+                                <div class="review-comments">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                    <span>120</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="review-4">
+                <div class="review" id="review-4">
                     <img src="public/img/uploads/clothes/gloves.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">
-                                <i class="fa-solid fa-heart"> 600</i>
-                                <i class="fa-solid fa-square-minus"> 120</i>
+                                <div class="review-likes">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>600</span>
+                                </div>
+                                <div class="review-comments">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                    <span>120</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="review-5">
+                <div class="review" id="review-5">
                     <img src="public/img/uploads/clothes/helmet-enduro.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">
-                                <i class="fa-solid fa-heart"> 600</i>
-                                <i class="fa-solid fa-square-minus"> 120</i>
+                                <div class="review-likes">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>600</span>
+                                </div>
+                                <div class="review-comments">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                    <span>120</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="review-6">
+                <div class="review" id="review-6">
                     <img src="public/img/uploads/clothes/protectors.png">
                     <div class="description-container">
                         <div class="review-description">
                             <h2>Title 1</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">
-                                <i class="fa-solid fa-heart"> 600</i>
-                                <i class="fa-solid fa-square-minus"> 120</i>
+                                <div class="review-likes">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>600</span>
+                                </div>
+                                <div class="review-comments">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                    <span>120</span>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ $path = parse_url($path, PHP_URL_PATH); # return string (because of component ("
 Routing::get('', 'DefaultController');
 Routing::get('index', 'DefaultController');
 Routing::get('reviews', 'DefaultController');
-Routing::get('people', 'DefaultController');
+Routing::get('community', 'DefaultController');
 Routing::post('login', 'SecurityController');
 
 Routing::run($path);

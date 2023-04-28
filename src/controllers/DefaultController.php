@@ -14,7 +14,7 @@ class DefaultController extends AppController {
         $this->render('reviews');
     }
 
-    public function people() {
-        $this->render('people');
+    public function community() {
+        $this->render('community');
     }
 }
