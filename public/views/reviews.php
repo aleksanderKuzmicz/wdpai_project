@@ -161,7 +161,7 @@
                 <div class="review" id="review-6">
                     <img src="public/img/uploads/clothes/protectors.png">
                     <div class="description-container">
-                        <div class="review-description">
+                    <div class="review-description">
                             <h2>Title 1</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">

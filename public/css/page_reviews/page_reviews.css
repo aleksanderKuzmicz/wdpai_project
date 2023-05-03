@@ -89,9 +89,11 @@ a {
     font-size: 1.5em;
 }
 
+/* change to proper class */
 .fa-rectangle-list {
     color: #ff661a;
 }
+
 
 main {
     display: flex;
@@ -109,23 +111,6 @@ header {
     /* border-bottom: 1px solid gray; */
 }
 
-.add-review {
-    /* background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
-    /* background: #1e2231; */
-    /* box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029; */
-    /* border-radius: 1.6em; */
-    color: white;
-    /* letter-spacing: 0.1em; */
-    padding: 0.5em;
-    width: 15%;
-    text-align: center;
-    /* display: flex; */
-    align-items: center;
-    /* justify-content: space-evenly;  */
-    line-height: 2em;
-
-}
-
 .search-bar {
     width: 80%;
 }
@@ -141,6 +126,24 @@ header {
     margin: 0em;
     padding: 1em;
     box-sizing: border-box;
+}
+
+/* change to proper class */
+.add-review {
+    /* background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
+    /* background: #1e2231; */
+    /* box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029; */
+    /* border-radius: 1.6em; */
+    color: white;
+    /* letter-spacing: 0.1em; */
+    padding: 0.5em;
+    width: 15%;
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-evenly;  */
+    line-height: 2em;
+
 }
 
 @media only screen and (max-device-width: 420px) {
@@ -283,6 +286,7 @@ header {
         padding: 0.6em;
     }
 
+    /* change to proper class */
     .add-review {
         /* background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
         /* background: #1e2231; */

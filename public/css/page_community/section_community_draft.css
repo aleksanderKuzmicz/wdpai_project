@@ -1,0 +1,91 @@
+.community {
+    height: 100%;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+    grid-gap: 1em;
+    overflow-x: scroll;
+    /* display: flex;
+    direction: row;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.person {
+    width: 30em;
+    /* padding: 1em;
+    margin: 1em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent linear-gradient(180deg, #000c2e 0%, #1e2231 100%) 0% 0% no-repeat padding-box;
+
+}
+
+.community>.person>.image-section {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-section>img {
+    height: 100%;
+    width: auto;
+}
+
+span {
+    color: white;
+}
+
+.bike-model>span {
+    font-size: 0.8em;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section>span {
+    font-size: 0.8em;
+    color:black;
+    background-color: white;
+    border-radius: 5%;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 0.8em;
+}
+
+.social-section>.subs-img {
+    display: flex;
+}
+
+.social-section>.subs-img>img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.social-section>.subs-img>.subs-extra {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color:white;
+    color: black;
+    align-items:center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
