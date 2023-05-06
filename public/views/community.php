@@ -108,6 +108,14 @@
                         <span>Gaining power</span>
                     </div>
                     <div class="social-section">
+                        <b>SUBSCRIBERS</b>
+                        <div class="subs-img">
+                            <img src="public/img/uploads/people/p2.png">
+                            <img src="public/img/uploads/people/p3.png">
+                            <img src="public/img/uploads/people/p4.png">
+                            <img src="public/img/uploads/people/p5.png">
+                            <div class="subs-extra"><b>+7</b></div>
+                        </div>
 
                     </div>
                 </div>
@@ -127,7 +135,14 @@
                         <span>Jedi Order</span>
                     </div>
                     <div class="social-section">
-
+                        <b>SUBSCRIBERS</b>
+                        <div class="subs-img">
+                            <img src="public/img/uploads/people/p2.png">
+                            <img src="public/img/uploads/people/p3.png">
+                            <img src="public/img/uploads/people/p4.png">
+                            <img src="public/img/uploads/people/p5.png">
+                            <div class="subs-extra"><b>+7</b></div>
+                        </div>
                     </div>
                 </div>
                 <div class="person" id="person_4">
@@ -146,6 +161,14 @@
                         <span>Adventures</span>
                     </div>
                     <div class="social-section">
+                        <b>SUBSCRIBERS</b>
+                        <div class="subs-img">
+                            <img src="public/img/uploads/people/p2.png">
+                            <img src="public/img/uploads/people/p3.png">
+                            <img src="public/img/uploads/people/p4.png">
+                            <img src="public/img/uploads/people/p5.png">
+                            <div class="subs-extra"><b>+7</b></div>
+                        </div>
 
                     </div>
                 </div>
@@ -165,7 +188,14 @@
                         <span>Wookiee family</span>
                     </div>
                     <div class="social-section">
-
+                        <b>SUBSCRIBERS</b>
+                        <div class="subs-img">
+                            <img src="public/img/uploads/people/p2.png">
+                            <img src="public/img/uploads/people/p3.png">
+                            <img src="public/img/uploads/people/p4.png">
+                            <img src="public/img/uploads/people/p5.png">
+                            <div class="subs-extra"><b>+7</b></div>
+                        </div>
                     </div>
                 </div>
                 <div class="person" id="person_6">
@@ -184,7 +214,14 @@
                         <span>Eliminating enemies</span>
                     </div>
                     <div class="social-section">
-
+                        <b>SUBSCRIBERS</b>
+                        <div class="subs-img">
+                            <img src="public/img/uploads/people/p2.png">
+                            <img src="public/img/uploads/people/p3.png">
+                            <img src="public/img/uploads/people/p4.png">
+                            <img src="public/img/uploads/people/p5.png">
+                            <div class="subs-extra"><b>+7</b></div>
+                        </div>
                     </div>
                 </div>
             </section>
