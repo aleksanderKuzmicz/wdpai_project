@@ -69,7 +69,7 @@
                         <img src="public/img/uploads/people/harley.png">
                     </div>
                     <div class="nickname">
-                        <span>Obi-Wan Kenobi</span>
+                        <span >Obi-Wan Kenobi</span>
                     </div>
                     <div class="bike-model">
                         <span>Eta-2 starfighter</span>
