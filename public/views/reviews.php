@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="public/css/page_reviews/page_reviews.css">
+    <link rel="stylesheet" type="text/css" href="public/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="public/css/page_reviews/section_reviews.css">
     <script src="https://kit.fontawesome.com/36e2e0d045.js" crossorigin="anonymous"></script>
     <title>Reviews</title>
@@ -13,7 +13,7 @@
             <ul>
                 <li>
                     <a href='#' class="nav-button">
-                        <i class="fa-solid fa-rectangle-list"></i>
+                        <i class="fa-solid fa-rectangle-list active"></i>
                         <span class="nav-button-text">Reviews</span>
                     </a>
                 </li>
@@ -52,7 +52,7 @@
                     </form>
 
                 </div>
-                <div class="add-review">
+                <div class="page-option">
                     
                     <a href='#' class="nav-button">
                         <i class="fa-solid fa-plus"></i>

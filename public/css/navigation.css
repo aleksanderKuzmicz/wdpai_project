@@ -15,13 +15,19 @@ body {
 nav {
     width: 15vw;
     height: 100%;
-    /* background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
     background: transparent linear-gradient(180deg, #000c2e, #000C2E 50%, #1e2231 100%) 0% 0% no-repeat padding-box;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+main {
+    width: 85vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav > img {
@@ -35,10 +41,8 @@ nav > img {
 }
 
 .nav-button {
-    /* border: 1px solid white; */
     border-radius: 1em;
     margin-left: 1em;
-    /* text-align: center; */
     text-align: left;
     letter-spacing: 0.5px;
     color: white;
@@ -81,14 +85,11 @@ a {
     font-size: 1.5em;
 }
 
-.fa-user-group {
+/* change to proper class */
+.active {
     color: #ff661a;
 }
 
-main {
-    height: 100%;
-    width: 85vw;
-}
 
 header {
     display: flex;
@@ -116,7 +117,8 @@ header {
     box-sizing: border-box;
 }
 
-.my-account {
+/* change to proper class */
+.page-option {
     /* background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
     /* background: #1e2231; */
     /* box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029; */
@@ -133,11 +135,10 @@ header {
 
 }
 
-
 @media only screen and (max-device-width: 420px) {
 
-    /* dla wszystkiego */
-    /* * {
+    /* dla wszystkiego
+    * {
         font-size: 30px;
     } */
 
@@ -159,7 +160,6 @@ header {
     nav {
         width: 100%;
         height: 10vh;
-        /* background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
         background: transparent linear-gradient(180deg, #000c2e, #000C2E 50%, #1e2231 100%) 0% 0% no-repeat padding-box;
         position: fixed;
         bottom: 0;
@@ -197,6 +197,7 @@ header {
         text-align: center;
         margin-bottom: 0em;
         font-size: 1em;
+
     }
 
     li:last-child {
@@ -267,12 +268,14 @@ header {
         text-align: center;
         color: gray;
         margin: 0em;
-        padding: 0.6em;
+        
         box-sizing: border-box;
-        font-size: 3em;
+        font-size: 1.5em;
+        padding: 0.6em;
     }
 
-    .my-account {
+    /* change to proper class */
+    .page-option {
         /* background: transparent linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
         /* background: #1e2231; */
         /* box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029; */

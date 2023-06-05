@@ -1,23 +1,6 @@
-/* .community {
-    width: 100;
-    height: 100%;
-    display: inline-grid;
-    grid-template-columns: repeat(auto-fit, minmax(30em, 30%));
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(30em, 30%);
-    grid-gap: 1em;
-    overflow-x: auto;
-    /* display: flex;
-    direction: row;
-    justify-content: space-around;
-    align-items: center; */
-/* } */ 
-
-
-
 .community {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     display: flex;
     flex-direction: row;
@@ -27,8 +10,6 @@
 .person {
     width: auto;
     margin: 0 1em 0 ;
-    /* padding: 1em;
-    margin: 1em; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,11 +35,11 @@ span {
 }
 
 .nickname>span {
-    font-size: 0.5em;
+    font-size: 1.5em;
 }
 
 .bike-model>span {
-    font-size: 0.8em;
+    font-size: 1.25em;
 }
 
 .info-section {
@@ -69,7 +50,7 @@ span {
 }
 
 .info-section>span {
-    font-size: 0.8em;
+    font-size: 1em;
     color:black;
     background-color: white;
     border-radius: 5%;
@@ -82,7 +63,7 @@ span {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .social-section>.subs-img {

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="public/css/page_community/page_community.css">
-    <!-- <link rel="stylesheet" type="text/css" href="public/css/page_community/section_community.css"> -->
+    <link rel="stylesheet" type="text/css" href="public/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="public/css/page_community/section_community_draft.css">
     <script src="https://kit.fontawesome.com/36e2e0d045.js" crossorigin="anonymous"></script>
     <title>Community</title>
@@ -20,7 +19,7 @@
                 </li>
                 <li>
                     <a href='#' class="nav-button">
-                        <i class="fa-solid fa-user-group"></i>
+                        <i class="fa-solid fa-user-group active"></i>
                         <span class="nav-button-text">Community</span>
                 </a>
                 </li>
@@ -49,11 +48,11 @@
             <header>
                 <div class="search-bar">
                     <form class="search-form">
-                        <input class="search-input" type="text" placeholder="Search reviews">
+                        <input class="search-input" type="text" placeholder="Search people">
                     </form>
 
                 </div>
-                <div class="my-account">
+                <div class="page-option">
                     
                     <a href='#' class="nav-button">
                         <i class="fa-solid fa-user"></i>
@@ -69,7 +68,7 @@
                         <img src="public/img/uploads/people/harley.png">
                     </div>
                     <div class="nickname">
-                        <span >Obi-Wan Kenobi</span>
+                        <span class="name">Obi-Wan Kenobi</span>
                     </div>
                     <div class="bike-model">
                         <span>Eta-2 starfighter</span>
