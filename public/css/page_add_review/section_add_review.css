@@ -1,0 +1,37 @@
+/*.add-review {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*    grid-gap: 1em;*/
+/*    padding: 1em;*/
+/*    overflow: auto;*/
+/*}*/
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    padding: 2em;
+    overflow: auto;
+}
+
+.add-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*taken from "style.css"*/
+input, textarea {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 0.84;
+    /*background-color: transparent;*/
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0.2em;
+    margin: 1em;
+    width: 50%;
+}

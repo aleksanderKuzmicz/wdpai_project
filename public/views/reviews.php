@@ -159,11 +159,11 @@
                     </div>
                 </div>
                 <div class="review" id="review-6">
-                    <img src="public/img/uploads/clothes/protectors.png">
+                    <img src="public/uploads/<?= $review->getImage() ?>">
                     <div class="description-container">
                     <div class="review-description">
-                            <h2>Title 1</h2>
-                            <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
+                            <h2><?= $review->getTitle() ?></h2>
+                            <p><?= $review->getDescription() ?></p>
                             <div class="social-section">
                                 <div class="review-likes">
                                     <i class="fa-solid fa-heart"></i>

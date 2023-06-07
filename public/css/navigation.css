@@ -137,10 +137,9 @@ header {
 
 @media only screen and (max-device-width: 420px) {
 
-    /* dla wszystkiego
     * {
         font-size: 30px;
-    } */
+    }
 
     body {
         margin: 0;

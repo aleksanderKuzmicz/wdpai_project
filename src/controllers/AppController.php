@@ -1,11 +1,8 @@
 <?php
 
 class AppController {
-    private $request;
+    private $request; # save request method here for safety
 
-    /**
-     * @param $request
-     */
     public function __construct(){
         $this->request = $_SERVER['REQUEST_METHOD'];
     }
@@ -24,10 +21,10 @@ class AppController {
         $output = 'File not found';
 
         if (file_exists($templatePath)) {
-            extract($variables);
-            ob_start();
-            include($templatePath);
-            $output = ob_get_clean();
+            extract($variables); # unpack passed variables to be available in "views"
+            ob_start(); # open bufor
+            include($templatePath); # read view file into bufor
+            $output = ob_get_clean(); # send bufor data to browser using variable
         }
 
         print $output;

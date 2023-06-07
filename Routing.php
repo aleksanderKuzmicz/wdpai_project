@@ -2,6 +2,7 @@
 
 require_once './src/controllers/DefaultController.php';
 require_once './src/controllers/SecurityController.php';
+require_once './src/controllers/ReviewController.php';
 
 class Routing {
     public static $routes;
@@ -10,8 +11,8 @@ class Routing {
         self::$routes[$url] = $view;
     }
 
-    public static function get($url, $controller) {
-        self::$routes[$url] = $controller;
+    public static function get($url, $view) {
+        self::$routes[$url] = $view;
     }
 
     public static function run($url) {
@@ -24,7 +25,7 @@ class Routing {
         $controller_name = self::$routes[$action];
         $controller_obj = new $controller_name;
         $action = $action ?: 'index'; # for handling "localhost:8080/" - empty 'action'
-        $controller_obj->$action();
+        $controller_obj->$action(); # Creation of controller object requires including it's object with "require_once"
     }
 
 }
