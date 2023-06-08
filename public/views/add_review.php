@@ -53,9 +53,8 @@
 
                 </div>
                 <div class="page-option">
-
                     <a href='#' class="nav-button">
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-plus active"></i>
                         <span class="nav-button-text">Add review</span>
                     </a>
 
@@ -63,7 +62,7 @@
 
             </header>
             <section class="add-review">
-                <h1>UPLOAD</h1>
+                <h1 class="text">Create Your review!</h1>
                 <form action="add_review" method="POST" ENCTYPE="multipart/form-data">
                     <div class="messages">
                         <?php
@@ -74,10 +73,20 @@
                         }
                         ?>
                     </div>
-                    <input name="title" type="text" placeholder="title">
-                    <textarea name="description" rows=5 placeholder="description"></textarea>
-                    <input type="file" name="file"/><br/>
-                    <button type="submit">send</button>
+                    <input name="title" type="text" placeholder="Review title">
+                    <textarea name="description" rows=5 placeholder="Review Description"></textarea>
+
+                    <label class="file-loader">
+                        <input type="file" name="file">
+                        <i class="fa fa-file-arrow-up active"></i>
+                        <span class="text">Load product's image</span>
+                    </label>
+
+<!--                    <input type="file" name="file"/><br/>-->
+                    <button type="submit">
+                        <h3 class="text">Publish the review!</h3>
+                        <img src="public/img/button.jpg" alt="Send button image">
+                    </button>
                 </form>
             </section>
         </main>

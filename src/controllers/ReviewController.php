@@ -22,8 +22,9 @@ class ReviewController extends AppController{
             $review = new Review($_POST["title"], $_POST["description"], $_FILES["file"]["name"]);
 
             $this->render("reviews", ["messages" => $this->messages, "review" => $review]);
+        } else {
+            $this->render("add_review", ["messages" => $this->messages]);
         }
-        $this->render("add_review", ["messages" => $this->messages]);
     }
 
     private function validate_file(array $file): bool {

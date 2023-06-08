@@ -233,6 +233,11 @@ header {
         font-size: 2.5em;;
     }
 
+    .nav-button {
+        display: inline-flex;
+        align-items: center;
+    }
+
     .nav-button-text {
         display: none;
     }
@@ -289,10 +294,5 @@ header {
         /* justify-content: space-evenly;  */
         line-height: 2em;
     
-    }
-
-    .nav-button {
-        display: inline-flex;
-        align-items: center;
     }
 }

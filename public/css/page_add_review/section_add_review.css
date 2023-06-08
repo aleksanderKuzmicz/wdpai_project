@@ -1,37 +1,96 @@
-/*.add-review {*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(3, 1fr);*/
-/*    grid-gap: 1em;*/
-/*    padding: 1em;*/
-/*    overflow: auto;*/
-/*}*/
-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
-    padding: 2em;
-    overflow: auto;
-}
-
+/* taken from reviews.css*/
 .add-review {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100vh;
 }
 
-form {
+h1 {
+    text-align: center;
+}
+
+.text {
+    color: white;
+}
+
+.messages {
+    color: #ff661a;
+}
+
+section form {
+    /*width: 80vh;*/
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
+
 /*taken from "style.css"*/
-input, textarea {
+form input, form textarea {
     background: #ffffff 0% 0% no-repeat padding-box;
     opacity: 0.84;
-    /*background-color: transparent;*/
     border: none;
     border-bottom: 1px solid gray;
     padding: 0.2em;
     margin: 1em;
-    width: 50%;
+    width: 60vw;
+    /*font-size: 1.2em;*/
+}
+
+form textarea {
+    height: 30vh;
+}
+
+.file-loader {
+    border: none;
+    cursor: pointer;
+    margin: 1em;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+section button {
+    background-color: transparent;
+    margin: 0em;
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+
+@media only screen and (max-device-width: 420px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .text {
+        font-size: 1.5em;
+    }
+
+    .messages {
+        font-size: 2em;
+    }
+
+    form input, form textarea {
+        font-size: 1.5em;
+        width: 90vw;
+    }
+
+    .load-button-text {
+        font-size: 1.5em;
+    }
 }
