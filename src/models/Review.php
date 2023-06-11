@@ -6,6 +6,8 @@ class Review{
     private $title;
     private $description;
     private $image;
+    private $likesNumber;
+    private $creationDate;
 
     public function __construct(string $title, string $description, string $image)
     {
@@ -42,6 +44,26 @@ class Review{
     public function setImage(string $image)
     {
         $this->image = $image;
+    }
+
+    public function getLikesNumber()
+    {
+        return $this->likesNumber;
+    }
+
+    public function setLikesNumber($likesNumber)
+    {
+        $this->likesNumber = $likesNumber;
+    }
+
+    public function getCreationDate()
+    {
+        return $this->creationDate;
+    }
+
+    public function setCreationDate($creationDate)
+    {
+        $this->creationDate = $creationDate;
     }
 
 }

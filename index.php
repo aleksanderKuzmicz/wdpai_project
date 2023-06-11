@@ -2,6 +2,7 @@
 
 require 'Routing.php';
 # index.php jest pierwszym plikiem uruchamianym na serwerze
+setcookie("Wazowski_cookie", "cookie_value", time()+3600*24*30, "/"); #https://www.guru99.com/cookies-and-sessions.html
 
 # $_SERVER['REQUEST_URI'] contains the URI of the current page.
 # So if the full path of a page is https://www.w3resource.com/html/html-tutorials.php, 

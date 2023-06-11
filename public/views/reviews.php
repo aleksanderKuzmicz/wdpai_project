@@ -67,7 +67,7 @@
                     <img src="public/img/uploads/clothes/boots.png">
                     <div class="description-container">
                         <div class="review-description">
-                            <h2>Title 1</h2>
+                            <h2>Its flexible, its not noticeable! Held D3O</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">
                                 <div class="review-likes">
@@ -86,7 +86,7 @@
                     <img src="public/img/uploads/clothes/jacket.png">
                     <div class="description-container">
                         <div class="review-description">
-                            <h2>Title 1</h2>
+                            <h2>Its flexible, its not noticeable! Held D3O</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">
                                 <div class="review-likes">
@@ -105,7 +105,7 @@
                     <img src="public/img/uploads/clothes/helmet-mirror.png">
                     <div class="description-container">
                         <div class="review-description">
-                            <h2>Title 1</h2>
+                            <h2>Its flexible, its not noticeable! Held D3O</h2>
                             <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
                             <div class="social-section">
                                 <div class="review-likes">

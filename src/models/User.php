@@ -4,15 +4,39 @@ class User
 {
     private $email;
     private $password;
+    private $salt;
+    private $roleID;
     private $name;
     private $surname;
 
-    public function __construct(string $email, string $password, string $name, string $surname)
+    public function __construct(string $email, string $password, string $salt, int $roleID, string $name, string $surname)
     {
         $this->email = $email;
         $this->password = $password;
+        $this->salt = $salt;
+        $this->roleID = $roleID;
         $this->name = $name;
         $this->surname = $surname;
+    }
+
+    public function getSalt()
+    {
+        return $this->salt;
+    }
+
+    public function setSalt()
+    {
+        $this->salt = "foo";
+    }
+
+    public function getRoleID()
+    {
+        return $this->roleID;
+    }
+
+    public function setRoleID($roleID)
+    {
+        $this->roleID = $roleID;
     }
 
     public function getEmail(): string

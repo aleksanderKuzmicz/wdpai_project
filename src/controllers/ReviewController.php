@@ -2,6 +2,8 @@
 
 require_once 'AppController.php';
 require_once __DIR__.'/../models/Review.php';
+require_once __DIR__.'/../repository/ReviewRepository.php';
+
 
 
 class ReviewController extends AppController{
@@ -11,6 +13,13 @@ class ReviewController extends AppController{
     const UPLOAD_DIRECTORY = "/../public/uploads/";
 
     private $messages = [];
+    private $projectRepository;
+
+    public function __construct(){
+        parent::__construct();
+        $this->projectRepository = new ReviewRepository();
+    }
+
 
     public function add_review() {
         if($this->isPost() && is_uploaded_file($_FILES["file"]["tmp_name"]) && $this->validate_file($_FILES["file"])) {
@@ -20,6 +29,7 @@ class ReviewController extends AppController{
             );
 
             $review = new Review($_POST["title"], $_POST["description"], $_FILES["file"]["name"]);
+            $this->projectRepository->addReview($review);
 
             $this->render("reviews", ["messages" => $this->messages, "review" => $review]);
         } else {

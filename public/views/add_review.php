@@ -77,12 +77,13 @@
                     <textarea name="description" rows=5 placeholder="Review Description"></textarea>
 
                     <label class="file-loader">
-                        <input type="file" name="file">
                         <i class="fa fa-file-arrow-up active"></i>
-                        <span class="text">Load product's image</span>
+                        <input type="file" name="file">
+
+<!--                        <span class="text">Load product's image</span>-->
                     </label>
 
-<!--                    <input type="file" name="file"/><br/>-->
+<!--                    <input type="file" name="file"><br/>-->
                     <button type="submit">
                         <h3 class="text">Publish the review!</h3>
                         <img src="public/img/button.jpg" alt="Send button image">
