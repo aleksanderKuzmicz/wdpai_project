@@ -1,0 +1,134 @@
+body {
+    margin:0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #000c2e, #000c2e 50%, #1e2231 100%) 0% 0% no-repeat padding-box;
+
+    display: flex;
+    flex-direction: row;
+    /* wyśrodkowanie */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-container {
+    width: 40%;
+    text-align: center;
+}
+
+.logo-img {
+    height: 12em;
+}
+
+.register-container {
+    width: 40%;
+    text-align: center;
+}
+
+form.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 75vh;
+
+    background: #ffffff 0% 0% no-repeat padding-box;
+    /*background: #5e6272 0% 0% no-repeat padding-box;*/
+
+    box-shadow: inset 5px 5px 6px #00000029, 7px 7px 6px #00000029;
+    border-radius: 36px;
+    opacity: 0.84;
+}
+
+.credentials-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0.2em;
+    margin: 1em;
+    width: 50%;
+    text-align: center;
+}
+
+.submit-button {
+    width: 30%;
+    border: none;
+    color: white;
+    margin: 1em;
+    line-height: 2.5em;
+
+    /* from xd */
+    background: #1e2231; /*linear-gradient(180deg, #BC0000 0%, #000C2E 100%) 0% 0% no-repeat padding-box; */
+    box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
+    border-radius: 12px;
+
+}
+
+.or_sep {
+    width: 70%;
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    color: gray;
+}
+
+hr {
+    width: 8vw;
+    border: none;
+    border-top: 1px solid rgb(146, 146, 146);
+}
+
+.active {
+    color: #ff661a;
+}
+
+.file-loader {
+    border: none;
+    cursor: pointer;
+    margin: 1em;
+    text-align: center;
+}
+
+input[type="file"] {
+    /*display: none;*/
+    width: 15em;
+}
+
+@media only screen and (max-device-width: 420px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* wyśrodkowanie */
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /* dla wszystkiego */
+    * {
+        font-size: 36px;
+    }
+
+    .register-container, .logo-container {
+        width: 80%;
+    }
+
+    .logo-img {
+        height: 7em;
+        margin: 1em;
+    }
+
+    form.register-form {
+        border-radius: 80px;
+        width: auto;
+        height: available;
+        overflow-y: scroll;
+    }
+
+    .sign-button {
+        border-radius: 50px;
+    }
+}

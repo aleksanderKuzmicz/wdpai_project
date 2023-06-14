@@ -12,10 +12,11 @@ $path = parse_url($path, PHP_URL_PATH); # return string (because of component ("
 
 Routing::get('', 'DefaultController');
 Routing::get('index', 'DefaultController');
-Routing::get('reviews', 'DefaultController');
-Routing::get('community', 'DefaultController');
+Routing::get('reviews', 'ReviewController');
+Routing::get('community', 'SecurityController');
 
 Routing::post('login', 'SecurityController');
+Routing::post('register', 'SecurityController');
 Routing::post('add_review', 'ReviewController');
 
 Routing::run($path);

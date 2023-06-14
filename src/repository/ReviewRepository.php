@@ -4,8 +4,6 @@ require_once "Repository.php";
 require_once __DIR__."/../models/Review.php";
 
 class ReviewRepository extends Repository{
-
-
     public function getReview(int $id){
         $raw_statement = "SELECT * FROM reviews WHERE reviewID = :id";
         $statement = $this->database->connect()->prepare($raw_statement);
@@ -21,10 +19,25 @@ class ReviewRepository extends Repository{
         return new Review(
             $review["title"],
             $review["description"],
-            $review["image"],
-            $review["likesNumber"],
-            $review["creationDate"]
+            $review["image"]
         );
+    }
+
+    public function getReviews(): array{
+        $result = [];
+        $raw_statement = "SELECT * FROM reviews ORDER BY reviews.review_id DESC";
+        $statement = $this->database->connect()->prepare($raw_statement);
+        $statement->execute();
+        $reviews = $statement->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($reviews as $review) {
+            $result[] = new Review(
+                $review["title"],
+                $review["description"],
+                $review["image"]
+            );
+        }
+
+        return $result;
     }
 
     public function addReview(Review $review){

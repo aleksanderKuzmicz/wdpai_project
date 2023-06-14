@@ -13,11 +13,11 @@ class ReviewController extends AppController{
     const UPLOAD_DIRECTORY = "/../public/uploads/";
 
     private $messages = [];
-    private $projectRepository;
+    private $reviewRepository;
 
     public function __construct(){
         parent::__construct();
-        $this->projectRepository = new ReviewRepository();
+        $this->reviewRepository = new ReviewRepository();
     }
 
 
@@ -29,9 +29,9 @@ class ReviewController extends AppController{
             );
 
             $review = new Review($_POST["title"], $_POST["description"], $_FILES["file"]["name"]);
-            $this->projectRepository->addReview($review);
+            $this->reviewRepository->addReview($review);
 
-            $this->render("reviews", ["messages" => $this->messages, "review" => $review]);
+            $this->render("reviews", ["messages" => $this->messages, "reviews" => $this->reviewRepository->getReviews()]);
         } else {
             $this->render("add_review", ["messages" => $this->messages]);
         }
@@ -47,5 +47,10 @@ class ReviewController extends AppController{
             return false;
         }
         return true;
+    }
+
+    public function reviews() {
+        $reviews = $this->reviewRepository->getReviews();
+        $this->render('reviews', ["reviews"=>$reviews]);
     }
 }

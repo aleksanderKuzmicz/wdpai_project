@@ -60,15 +60,15 @@
                     </a>
 
                 </div>
-
             </header>
             <section class="reviews">
+                <?php foreach ($reviews as $review): ?>
                 <div class="review" id="review-1">
-                    <img src="public/img/uploads/clothes/boots.png">
+                    <img src="public/uploads/<?= $review->getImage(); ?>">
                     <div class="description-container">
                         <div class="review-description">
-                            <h2>Its flexible, its not noticeable! Held D3O</h2>
-                            <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
+                            <h2><?= $review->getTitle(); ?></h2>
+                            <p><?= $review->getDescription(); ?></p>
                             <div class="social-section">
                                 <div class="review-likes">
                                     <i class="fa-solid fa-heart"></i>
@@ -82,101 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review" id="review-2">
-                    <img src="public/img/uploads/clothes/jacket.png">
-                    <div class="description-container">
-                        <div class="review-description">
-                            <h2>Its flexible, its not noticeable! Held D3O</h2>
-                            <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
-                            <div class="social-section">
-                                <div class="review-likes">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>600</span>
-                                </div>
-                                <div class="review-comments">
-                                    <i class="fa-solid fa-square-minus"></i>
-                                    <span>120</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="review" id="review-3">
-                    <img src="public/img/uploads/clothes/helmet-mirror.png">
-                    <div class="description-container">
-                        <div class="review-description">
-                            <h2>Its flexible, its not noticeable! Held D3O</h2>
-                            <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
-                            <div class="social-section">
-                                <div class="review-likes">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>600</span>
-                                </div>
-                                <div class="review-comments">
-                                    <i class="fa-solid fa-square-minus"></i>
-                                    <span>120</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="review" id="review-4">
-                    <img src="public/img/uploads/clothes/gloves.png">
-                    <div class="description-container">
-                        <div class="review-description">
-                            <h2>Title 1</h2>
-                            <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
-                            <div class="social-section">
-                                <div class="review-likes">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>600</span>
-                                </div>
-                                <div class="review-comments">
-                                    <i class="fa-solid fa-square-minus"></i>
-                                    <span>120</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="review" id="review-5">
-                    <img src="public/img/uploads/clothes/helmet-enduro.png">
-                    <div class="description-container">
-                        <div class="review-description">
-                            <h2>Title 1</h2>
-                            <p>Some description. This is the shorthand for flex-grow, flex-shrink and flex-basis combined.This is the shorthand for flex-grow, flex-shrink and flex-basis combined.</p>
-                            <div class="social-section">
-                                <div class="review-likes">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>600</span>
-                                </div>
-                                <div class="review-comments">
-                                    <i class="fa-solid fa-square-minus"></i>
-                                    <span>120</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="review" id="review-6">
-                    <img src="public/uploads/<?= $review->getImage() ?>">
-                    <div class="description-container">
-                    <div class="review-description">
-                            <h2><?= $review->getTitle() ?></h2>
-                            <p><?= $review->getDescription() ?></p>
-                            <div class="social-section">
-                                <div class="review-likes">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>600</span>
-                                </div>
-                                <div class="review-comments">
-                                    <i class="fa-solid fa-square-minus"></i>
-                                    <span>120</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </section>
         </main>
 

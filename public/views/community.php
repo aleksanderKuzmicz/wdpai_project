@@ -63,20 +63,21 @@
 
             </header>
             <section class="community">
+                <?php foreach ($users as $user): ?>
                 <div class="person" id="person_1">
                     <div class="image-section">
-                        <img src="public/img/uploads/people/harley.png">
+                        <img src="public/uploads/avatars/<?= $user->getAvatar(); ?>">
                     </div>
                     <div class="nickname">
-                        <span class="name">Obi-Wan Kenobi</span>
+                        <span class="name"><?= $user->getName(); $user->getSurname();?></span>
                     </div>
                     <div class="bike-model">
-                        <span>Eta-2 starfighter</span>
+                        <span><?= $user->getBike(); ?></span>
                     </div>
                     <div class="info-section">
-                        <span>Jedi Order</span>
-                        <span>Mentorship</span>
-                        <span>Fighting for justice</span>
+                        <span><?= $user->getInterest1(); ?></span>
+                        <span><?= $user->getInterest2(); ?></span>
+                        <span><?= $user->getInterest3(); ?></span>
                     </div>
                     <div class="social-section">
                         <b>SUBSCRIBERS</b>
@@ -89,140 +90,173 @@
                         </div>
 
                     </div>
-                   
-                </div>
-                <div class="person" id="person_2">
-                    <div class="image-section">
-                        <img src="public/img/uploads/people/p2.png">
-                    </div>
-                    <div class="nickname">
-                        <span>Anakin Skywalker</span>
-                    </div>
-                    <div class="bike-model">
-                        <span>Eta-2 starfighter</span>
-                    </div>
-                    <div class="info-section">
-                        <span>Mastering skills</span>
-                        <span>Protecting</span>
-                        <span>Gaining power</span>
-                    </div>
-                    <div class="social-section">
-                        <b>SUBSCRIBERS</b>
-                        <div class="subs-img">
-                            <img src="public/img/uploads/people/p2.png">
-                            <img src="public/img/uploads/people/p3.png">
-                            <img src="public/img/uploads/people/p4.png">
-                            <img src="public/img/uploads/people/p5.png">
-                            <div class="subs-extra"><b>+7</b></div>
-                        </div>
 
-                    </div>
                 </div>
-                <div class="person" id="person_3">
-                    <div class="image-section">
-                        <img src="public/img/uploads/people/p3.png">
-                    </div>
-                    <div class="nickname">
-                        <span>Yoda</span>
-                    </div>
-                    <div class="bike-model">
-                        <span>Yoda's Jedi starfighter</span>
-                    </div>
-                    <div class="info-section">
-                        <span>the Force</span>
-                        <span>Knowledge</span>
-                        <span>Jedi Order</span>
-                    </div>
-                    <div class="social-section">
-                        <b>SUBSCRIBERS</b>
-                        <div class="subs-img">
-                            <img src="public/img/uploads/people/p2.png">
-                            <img src="public/img/uploads/people/p3.png">
-                            <img src="public/img/uploads/people/p4.png">
-                            <img src="public/img/uploads/people/p5.png">
-                            <div class="subs-extra"><b>+7</b></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="person" id="person_4">
-                    <div class="image-section">
-                        <img src="public/img/uploads/people/p4.png">
-                    </div>
-                    <div class="nickname">
-                        <span>Han Solo</span>
-                    </div>
-                    <div class="bike-model">
-                        <span>Millenium Falcon</span>
-                    </div>
-                    <div class="info-section">
-                        <span>Profit</span>
-                        <span>My ship</span>
-                        <span>Adventures</span>
-                    </div>
-                    <div class="social-section">
-                        <b>SUBSCRIBERS</b>
-                        <div class="subs-img">
-                            <img src="public/img/uploads/people/p2.png">
-                            <img src="public/img/uploads/people/p3.png">
-                            <img src="public/img/uploads/people/p4.png">
-                            <img src="public/img/uploads/people/p5.png">
-                            <div class="subs-extra"><b>+7</b></div>
-                        </div>
+                <?php endforeach; ?>
 
-                    </div>
-                </div>
-                <div class="person" id="person_5">
-                    <div class="image-section">
-                        <img src="public/img/uploads/people/p5.png">
-                    </div>
-                    <div class="nickname">
-                        <span>Chewbacca</span>
-                    </div>
-                    <div class="bike-model">
-                        <span>Millenium Falcon</span>
-                    </div>
-                    <div class="info-section">
-                        <span>Helping friends</span>
-                        <span>Technology</span>
-                        <span>Wookiee family</span>
-                    </div>
-                    <div class="social-section">
-                        <b>SUBSCRIBERS</b>
-                        <div class="subs-img">
-                            <img src="public/img/uploads/people/p2.png">
-                            <img src="public/img/uploads/people/p3.png">
-                            <img src="public/img/uploads/people/p4.png">
-                            <img src="public/img/uploads/people/p5.png">
-                            <div class="subs-extra"><b>+7</b></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="person" id="person_6">
-                    <div class="image-section">
-                        <img src="public/img/uploads/people/p6.png">
-                    </div>
-                    <div class="nickname">
-                        <span>Sheev Palpatine</span>
-                    </div>
-                    <div class="bike-model">
-                        <span>Emperor's Royal Guard TIE</span>
-                    </div>
-                    <div class="info-section">
-                        <span>Power</span>
-                        <span>Dark Side</span>
-                        <span>Eliminating enemies</span>
-                    </div>
-                    <div class="social-section">
-                        <b>SUBSCRIBERS</b>
-                        <div class="subs-img">
-                            <img src="public/img/uploads/people/p2.png">
-                            <img src="public/img/uploads/people/p3.png">
-                            <img src="public/img/uploads/people/p4.png">
-                            <img src="public/img/uploads/people/p5.png">
-                            <div class="subs-extra"><b>+7</b></div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+<!--                <div class="person" id="person_1">-->
+<!--                    <div class="image-section">-->
+<!--                        <img src="public/img/uploads/people/harley.png">-->
+<!--                    </div>-->
+<!--                    <div class="nickname">-->
+<!--                        <span class="name">Obi-Wan Kenobi</span>-->
+<!--                    </div>-->
+<!--                    <div class="bike-model">-->
+<!--                        <span>Eta-2 starfighter</span>-->
+<!--                    </div>-->
+<!--                    <div class="info-section">-->
+<!--                        <span>Jedi Order</span>-->
+<!--                        <span>Mentorship</span>-->
+<!--                        <span>Fighting for justice</span>-->
+<!--                    </div>-->
+<!--                    <div class="social-section">-->
+<!--                        <b>SUBSCRIBERS</b>-->
+<!--                        <div class="subs-img">-->
+<!--                            <img src="public/img/uploads/people/p2.png">-->
+<!--                            <img src="public/img/uploads/people/p3.png">-->
+<!--                            <img src="public/img/uploads/people/p4.png">-->
+<!--                            <img src="public/img/uploads/people/p5.png">-->
+<!--                            <div class="subs-extra"><b>+7</b></div>-->
+<!--                        </div>-->
+<!---->
+<!--                    </div>-->
+<!--                   -->
+<!--                </div>-->
+<!--                <div class="person" id="person_2">-->
+<!--                    <div class="image-section">-->
+<!--                        <img src="public/img/uploads/people/p2.png">-->
+<!--                    </div>-->
+<!--                    <div class="nickname">-->
+<!--                        <span>Anakin Skywalker</span>-->
+<!--                    </div>-->
+<!--                    <div class="bike-model">-->
+<!--                        <span>Eta-2 starfighter</span>-->
+<!--                    </div>-->
+<!--                    <div class="info-section">-->
+<!--                        <span>Mastering skills</span>-->
+<!--                        <span>Protecting</span>-->
+<!--                        <span>Gaining power</span>-->
+<!--                    </div>-->
+<!--                    <div class="social-section">-->
+<!--                        <b>SUBSCRIBERS</b>-->
+<!--                        <div class="subs-img">-->
+<!--                            <img src="public/img/uploads/people/p2.png">-->
+<!--                            <img src="public/img/uploads/people/p3.png">-->
+<!--                            <img src="public/img/uploads/people/p4.png">-->
+<!--                            <img src="public/img/uploads/people/p5.png">-->
+<!--                            <div class="subs-extra"><b>+7</b></div>-->
+<!--                        </div>-->
+<!---->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="person" id="person_3">-->
+<!--                    <div class="image-section">-->
+<!--                        <img src="public/img/uploads/people/p3.png">-->
+<!--                    </div>-->
+<!--                    <div class="nickname">-->
+<!--                        <span>Yoda</span>-->
+<!--                    </div>-->
+<!--                    <div class="bike-model">-->
+<!--                        <span>Yoda's Jedi starfighter</span>-->
+<!--                    </div>-->
+<!--                    <div class="info-section">-->
+<!--                        <span>the Force</span>-->
+<!--                        <span>Knowledge</span>-->
+<!--                        <span>Jedi Order</span>-->
+<!--                    </div>-->
+<!--                    <div class="social-section">-->
+<!--                        <b>SUBSCRIBERS</b>-->
+<!--                        <div class="subs-img">-->
+<!--                            <img src="public/img/uploads/people/p2.png">-->
+<!--                            <img src="public/img/uploads/people/p3.png">-->
+<!--                            <img src="public/img/uploads/people/p4.png">-->
+<!--                            <img src="public/img/uploads/people/p5.png">-->
+<!--                            <div class="subs-extra"><b>+7</b></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="person" id="person_4">-->
+<!--                    <div class="image-section">-->
+<!--                        <img src="public/img/uploads/people/p4.png">-->
+<!--                    </div>-->
+<!--                    <div class="nickname">-->
+<!--                        <span>Han Solo</span>-->
+<!--                    </div>-->
+<!--                    <div class="bike-model">-->
+<!--                        <span>Millenium Falcon</span>-->
+<!--                    </div>-->
+<!--                    <div class="info-section">-->
+<!--                        <span>Profit</span>-->
+<!--                        <span>My ship</span>-->
+<!--                        <span>Adventures</span>-->
+<!--                    </div>-->
+<!--                    <div class="social-section">-->
+<!--                        <b>SUBSCRIBERS</b>-->
+<!--                        <div class="subs-img">-->
+<!--                            <img src="public/img/uploads/people/p2.png">-->
+<!--                            <img src="public/img/uploads/people/p3.png">-->
+<!--                            <img src="public/img/uploads/people/p4.png">-->
+<!--                            <img src="public/img/uploads/people/p5.png">-->
+<!--                            <div class="subs-extra"><b>+7</b></div>-->
+<!--                        </div>-->
+<!---->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="person" id="person_5">-->
+<!--                    <div class="image-section">-->
+<!--                        <img src="public/img/uploads/people/p5.png">-->
+<!--                    </div>-->
+<!--                    <div class="nickname">-->
+<!--                        <span>Chewbacca</span>-->
+<!--                    </div>-->
+<!--                    <div class="bike-model">-->
+<!--                        <span>Millenium Falcon</span>-->
+<!--                    </div>-->
+<!--                    <div class="info-section">-->
+<!--                        <span>Helping friends</span>-->
+<!--                        <span>Technology</span>-->
+<!--                        <span>Wookiee family</span>-->
+<!--                    </div>-->
+<!--                    <div class="social-section">-->
+<!--                        <b>SUBSCRIBERS</b>-->
+<!--                        <div class="subs-img">-->
+<!--                            <img src="public/img/uploads/people/p2.png">-->
+<!--                            <img src="public/img/uploads/people/p3.png">-->
+<!--                            <img src="public/img/uploads/people/p4.png">-->
+<!--                            <img src="public/img/uploads/people/p5.png">-->
+<!--                            <div class="subs-extra"><b>+7</b></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="person" id="person_6">-->
+<!--                    <div class="image-section">-->
+<!--                        <img src="public/img/uploads/people/p6.png">-->
+<!--                    </div>-->
+<!--                    <div class="nickname">-->
+<!--                        <span>Sheev Palpatine</span>-->
+<!--                    </div>-->
+<!--                    <div class="bike-model">-->
+<!--                        <span>Emperor's Royal Guard TIE</span>-->
+<!--                    </div>-->
+<!--                    <div class="info-section">-->
+<!--                        <span>Power</span>-->
+<!--                        <span>Dark Side</span>-->
+<!--                        <span>Eliminating enemies</span>-->
+<!--                    </div>-->
+<!--                    <div class="social-section">-->
+<!--                        <b>SUBSCRIBERS</b>-->
+<!--                        <div class="subs-img">-->
+<!--                            <img src="public/img/uploads/people/p2.png">-->
+<!--                            <img src="public/img/uploads/people/p3.png">-->
+<!--                            <img src="public/img/uploads/people/p4.png">-->
+<!--                            <img src="public/img/uploads/people/p5.png">-->
+<!--                            <div class="subs-extra"><b>+7</b></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </section>
         </main>
 

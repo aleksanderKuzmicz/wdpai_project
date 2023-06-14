@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/login_register/login.css">
     <script src="https://kit.fontawesome.com/36e2e0d045.js" crossorigin="anonymous"></script>
     <title>
         Gosafe login
     </title>
+    <link rel="icon" type="images/x-icon" href="public/img/logo-title.png"/>
 
 </head>
 <body>

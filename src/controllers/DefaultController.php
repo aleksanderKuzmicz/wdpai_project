@@ -8,13 +8,4 @@ class DefaultController extends AppController {
         // TODO display login.php
         $this->render('login');
     }
-
-    public function reviews() {
-        // TODO display projects.html
-        $this->render('reviews');
-    }
-
-    public function community() {
-        $this->render('community');
-    }
 }
