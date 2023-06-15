@@ -47,10 +47,7 @@
         <main>
             <header>
                 <div class="search-bar">
-                    <form class="search-form">
-                        <input class="search-input" type="text" placeholder="Search people">
-                    </form>
-
+                    <input class="search-input" type="text" placeholder="Search people">
                 </div>
                 <div class="page-option">
                     
@@ -69,7 +66,7 @@
                         <img src="public/uploads/avatars/<?= $user->getAvatar(); ?>">
                     </div>
                     <div class="nickname">
-                        <span class="name"><?= $user->getName(); $user->getSurname();?></span>
+                        <span class="name"><?= $user->getName();?> <?=$user->getSurname();?></span>
                     </div>
                     <div class="bike-model">
                         <span><?= $user->getBike(); ?></span>

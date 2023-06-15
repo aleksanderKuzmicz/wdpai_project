@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/login_register/register.css">
     <script src="https://kit.fontawesome.com/36e2e0d045.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./public/js/script.js" defer></script>
     <title>
         Gosafe register
     </title>

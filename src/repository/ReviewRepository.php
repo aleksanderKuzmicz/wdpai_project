@@ -40,6 +40,16 @@ class ReviewRepository extends Repository{
         return $result;
     }
 
+    public function getReviewByTitle(string $searchString) {
+        $searchString = '%'.strtolower($searchString).'%';
+        $raw_statement = "SELECT * FROM reviews WHERE LOWER(title) like :search OR LOWER(description) LIKE :search";
+        $statement = $this->database->connect()->prepare($raw_statement);
+        $statement->bindParam(':search', $searchString, PDO::PARAM_STR);
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+}
+
     public function addReview(Review $review){
         $date = new DateTime();
         $raw_statement = "INSERT INTO reviews (title, description, image, creation_date) VALUES (?, ?, ?, ?)";

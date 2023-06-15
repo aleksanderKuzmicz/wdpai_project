@@ -20,6 +20,10 @@ class ReviewController extends AppController{
         $this->reviewRepository = new ReviewRepository();
     }
 
+    public function reviews() {
+        $reviews = $this->reviewRepository->getReviews();
+        $this->render('reviews', ["reviews"=>$reviews]);
+    }
 
     public function add_review() {
         if($this->isPost() && is_uploaded_file($_FILES["file"]["tmp_name"]) && $this->validate_file($_FILES["file"])) {
@@ -37,6 +41,19 @@ class ReviewController extends AppController{
         }
     }
 
+    public function search_review() {
+        $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : "";
+        if($contentType === "application/json") {
+            $content = trim(file_get_contents("php://input"));
+            $decoded_content = json_decode($content, true);
+
+            header("Content-type: application/json");
+            http_response_code(200);
+
+            echo json_encode($this->reviewRepository->getReviewByTitle($decoded_content["search"]));
+        }
+    }
+
     private function validate_file(array $file): bool {
         if($file["size"] > self::MAX_FILE_SIZE){
             $this->messages[] = "Provided file is too large :(";
@@ -47,10 +64,5 @@ class ReviewController extends AppController{
             return false;
         }
         return true;
-    }
-
-    public function reviews() {
-        $reviews = $this->reviewRepository->getReviews();
-        $this->render('reviews', ["reviews"=>$reviews]);
     }
 }
