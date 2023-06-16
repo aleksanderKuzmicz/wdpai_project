@@ -70,11 +70,12 @@
                             <div class="social-section">
                                 <div class="review-likes">
                                     <i class="fa-solid fa-heart"></i>
-                                    <span>600</span>
+<!--                                    <span>600</span>-->
+                                    <span><?= $review->getLikesNumber(); ?></span>
                                 </div>
                                 <div class="review-comments">
                                     <i class="fa-solid fa-square-minus"></i>
-                                    <span>120</span>
+                                    <span><?= $review->getDislikesNumber(); ?></span>
                                 </div>
                             </div>
                         </div>

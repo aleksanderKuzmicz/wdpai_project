@@ -37,10 +37,10 @@ function createReview(review) {
     title.innerHTML = review.title;
     const description = template_clone.querySelector("p");
     description.innerHTML = review.description;
-    // const like = template_clone.querySelector(".fa-heart.span");
-    // like.innerHTML = review.like;
-    // const dislike = template_clone.querySelector(".fa-square-minus");
-    // dislike.innerHTML = review.dislike;
+    const like = template_clone.querySelector(".fa\-heart span");
+    like.innerHTML = review.likes_number;
+    // const dislike = template_clone.querySelector(".fa\-square-minus span");
+    // dislike.innerHTML = review.dislikes_number;
 
     reviewContainer.appendChild(template_clone);
 }

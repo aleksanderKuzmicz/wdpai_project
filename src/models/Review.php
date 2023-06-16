@@ -7,13 +7,32 @@ class Review{
     private $description;
     private $image;
     private $likesNumber;
+    private $dislikesNumber;
+
+    /**
+     * @return int
+     */
+    public function getDislikesNumber(): int
+    {
+        return $this->dislikesNumber;
+    }
+
+    /**
+     * @param int $dislikesNumber
+     */
+    public function setDislikesNumber(int $dislikesNumber)
+    {
+        $this->dislikesNumber = $dislikesNumber;
+    }
     private $creationDate;
 
-    public function __construct(string $title, string $description, string $image)
+    public function __construct(string $title, string $description, string $image, int $likesNumber = 0, int $dislikesNumber = 0)
     {
         $this->title = $title;
         $this->description = $description;
         $this->image = $image;
+        $this->likesNumber = $likesNumber;
+        $this->dislikesNumber = $dislikesNumber;
     }
 
     public function getTitle(): string

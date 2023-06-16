@@ -33,7 +33,9 @@ class ReviewRepository extends Repository{
             $result[] = new Review(
                 $review["title"],
                 $review["description"],
-                $review["image"]
+                $review["image"],
+                $review["likes_number"],
+                $review["dislikes_number"]
             );
         }
 
