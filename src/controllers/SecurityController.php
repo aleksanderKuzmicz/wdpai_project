@@ -36,13 +36,13 @@ class SecurityController extends AppController{
          $this->render('login', ['messages' => ['User with this email does not exist.']]);
         }
 
-        if ($user->getPassword() !== $password){
-         $this->render('login', ['messages' => ['Wrong password.']]);
+        if(!password_verify($password, $user->getPassword())) {
+            $this->render('login', ['messages' => ['Wrong password.']]);
         }
 
         //        return $this->render('reviews');
         $url = "http://$_SERVER[HTTP_HOST]";
-        header("Location: {$url}/reviews");
+        header("Location: {$url}/community");
 
     }
 
@@ -50,6 +50,9 @@ class SecurityController extends AppController{
     {
         if (!$this->isPost()) {
             $this->render('register');
+        }
+        if ($_POST["email"] === "") {
+            return $this->render('register');
         }
         if ($this->isPost()) {
             $email = $_POST['email'];
@@ -76,8 +79,7 @@ class SecurityController extends AppController{
             if ($password !== $confirmedPassword) {
                 $this->render('register', ['messages' => ['Please provide proper password']]);
             }
-
-            //TODO try to use better hash function
+            $password = password_hash($password, PASSWORD_DEFAULT);
             $user = new User($email, $password, $password, $roleID, $name, $surname, $bike, $interest1, $interest2, $interest3, $avatar);
 
             $this->userRepository->addUser($user);

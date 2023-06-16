@@ -29,7 +29,7 @@
                 <input class="credentials-input" name="password" type="password" placeholder="password">
                 <button class="sign-button" type="submit">Sign in</button>
                 <span class="or_sep"><hr>or<hr></span>
-                <button class="sign-button">Sign up</button>
+                <button class="sign-button" type="submit" formaction="/register">Sign up</button>
             </form>
         </div>
     </div>
