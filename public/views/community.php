@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="public/css/page_community/section_community_draft.css">
     <script src="https://kit.fontawesome.com/36e2e0d045.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./public/js/searchPeople.js" defer></script>
     <title>Community</title>
 
 </head>
@@ -260,3 +261,34 @@
     </div>
 
 </body>
+
+<template id="user-template">
+    <div class="person" id="">
+        <div class="image-section">
+            <img src="">
+        </div>
+        <div class="nickname">
+            <span class="name">name</span>
+        </div>
+        <div class="bike-model">
+            <span>bike</span>
+        </div>
+        <div class="info-section">
+            <span class="interest1">interest1</span>
+            <span class="interest2">interest2</span>
+            <span class="interest3">interest3</span>
+        </div>
+        <div class="social-section">
+            <b>SUBSCRIBERS</b>
+            <div class="subs-img">
+                <img src="public/img/uploads/people/p2.png">
+                <img src="public/img/uploads/people/p3.png">
+                <img src="public/img/uploads/people/p4.png">
+                <img src="public/img/uploads/people/p5.png">
+                <div class="subs-extra"><b>+7</b></div>
+            </div>
+
+        </div>
+
+    </div>
+</template>

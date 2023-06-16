@@ -17,6 +17,7 @@ Routing::get('community', 'SecurityController');
 
 Routing::post('login', 'SecurityController');
 Routing::post('register', 'SecurityController');
+Routing::post('search_people', 'SecurityController');
 Routing::post('add_review', 'ReviewController');
 Routing::post('search_review', 'ReviewController');
 

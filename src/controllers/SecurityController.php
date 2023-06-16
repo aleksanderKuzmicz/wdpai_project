@@ -86,6 +86,23 @@ class SecurityController extends AppController{
         }
     }
 
+    public function community() {
+        $users = $this->userRepository->getUsers();
+        $this->render("community", ["users" => $users]);
+    }
+    
+    public function search_people() {
+        $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : "";
+        if ($contentType === "application/json") {
+            $content = trim(file_get_contents("php://input"));
+            $decoded_content = json_decode($content, true);
+            
+            header("Content-type: application/json");
+            http_response_code(200);
+            echo json_encode($this->userRepository->getUsersByName($decoded_content["search"]));
+        }
+    }
+
     private function validate_file(array $file): bool {
         if($file["size"] > self::MAX_FILE_SIZE){
             $this->messages[] = "Provided file is too large :(";
@@ -96,10 +113,5 @@ class SecurityController extends AppController{
             return false;
         }
         return true;
-    }
-
-    public function community() {
-        $users = $this->userRepository->getUsers();
-        $this->render("community", ["users" => $users]);
     }
 }

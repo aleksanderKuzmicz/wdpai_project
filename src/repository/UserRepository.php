@@ -81,4 +81,13 @@ class UserRepository extends Repository{
 
     }
 
+    public function getUsersByName(string $name) {
+        $searchString = '%'.strtolower($name).'%';
+        $raw_statement = "SELECT * FROM \"users\" join \"usersDetails\" on users.\"userDetailsID\" = \"usersDetails\".id WHERE LOWER(name) LIKE :param OR LOWER(surname) like :param";
+        $statement = $this->database->connect()->prepare($raw_statement);
+        $statement->bindParam(":param", $searchString, PDO::PARAM_STR);
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }

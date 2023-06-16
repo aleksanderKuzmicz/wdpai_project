@@ -6,7 +6,6 @@ search.addEventListener("keyup", function(event) {
         event.preventDefault();
 
         const data = {search: this.value};
-        console.log(data);
         fetch("/search_review", {
             method: "POST",
             headers: {
@@ -29,7 +28,7 @@ function loadReviews(reviews) {
 }
 
 function createReview(review) {
-    const template = document.querySelector("#review-template")
+    const template = document.querySelector("#review-template");
     const template_clone = template.content.cloneNode(true);
 
     const image = template_clone.querySelector("img");
