@@ -27,7 +27,8 @@ class UserRepository extends Repository{
             $user_data["interest1"],
             $user_data["interest2"],
             $user_data["interest3"],
-            $user_data["avatar"]
+            $user_data["avatar"],
+            $user_data["userID"]
             );
     }
 
@@ -49,7 +50,8 @@ class UserRepository extends Repository{
                 $user_data["interest1"],
                 $user_data["interest2"],
                 $user_data["interest3"],
-                $user_data["avatar"]
+                $user_data["avatar"],
+                $user_data["userID"]
             );
         }
         return $result;
@@ -88,6 +90,19 @@ class UserRepository extends Repository{
         $statement->bindParam(":param", $searchString, PDO::PARAM_STR);
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function addUserToSession(int $userID) {
+        $raw_statement = "INSERT INTO \"session\" (\"userID\") values (?)";
+        $statement = $this->database->connect()->prepare($raw_statement);
+        $statement->execute([$userID]);
+    }
+
+    public function deleteUserFromSession(int $userID) {
+        $raw_statement = "DELETE FROM \"session\" WHERE \"userID\"=:param";
+        $statement = $this->database->connect()->prepare($raw_statement);
+        $statement->bindParam(":param", $userID, PDO::PARAM_STR);
+        $statement->execute();
     }
 
 }

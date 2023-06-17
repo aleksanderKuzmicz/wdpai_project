@@ -37,7 +37,7 @@ function createReview(review) {
     title.innerHTML = review.title;
     const description = template_clone.querySelector("p");
     description.innerHTML = review.description;
-    const like = template_clone.querySelector(".fa\-heart span");
+    const like = template_clone.querySelector(".review-likes span");
     like.innerHTML = review.likes_number;
     // const dislike = template_clone.querySelector(".fa\-square-minus span");
     // dislike.innerHTML = review.dislikes_number;

@@ -12,13 +12,13 @@
             <img class="logo-img" src="public/img/logo-no-background.svg">
             <ul>
                 <li>
-                    <a href='#' class="nav-button">
+                    <a href='reviews' class="nav-button">
                         <i class="fa-solid fa-rectangle-list"></i>
                         <span class="nav-button-text">Reviews</span>
                     </a>
                 </li>
                 <li>
-                    <a href='#' class="nav-button">
+                    <a href='community' class="nav-button">
                         <i class="fa-solid fa-user-group"></i>
                         <span class="nav-button-text">Community</span>
                 </a>
@@ -36,9 +36,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href='#' class="nav-button">
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="nav-button-text">Settings</span>
+                    <a href='/logout' class="nav-button">
+                        <i class="fa-solid fa-person-walking-arrow-right fa-flip-horizontal"></i>
+                        <span class="nav-button-text">Logout</span>
                     </a>
                 </li>
             </ul>

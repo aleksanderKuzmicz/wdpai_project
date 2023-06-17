@@ -37,9 +37,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href='#' class="nav-button">
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="nav-button-text">Settings</span>
+                    <a href='/logout' class="nav-button">
+                        <i class="fa-solid fa-person-walking-arrow-right fa-flip-horizontal"></i>
+                        <span class="nav-button-text">Logout</span>
                     </a>
                 </li>
             </ul>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="page-option">
                     
-                    <a href='#' class="nav-button">
+                    <a href='add_review' class="nav-button">
                         <i class="fa-solid fa-plus"></i>
                         <span class="nav-button-text">Add review</span>
                     </a>

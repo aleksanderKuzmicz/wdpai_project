@@ -13,9 +13,10 @@ class User
     private $interest2;
     private $interest3;
     private $avatar;
+    private $userID;
 
 
-    public function __construct(string $email, string $password, string $salt, int $roleID, string $name, $surname, string $bike, string $interest1, string $interest2, string $interest3, string $avatar)
+    public function __construct(string $email, string $password, string $salt, int $roleID, string $name, $surname, string $bike, string $interest1, string $interest2, string $interest3, string $avatar, int $userID)
     {
         $this->email = $email;
         $this->password = $password;
@@ -28,7 +29,20 @@ class User
         $this->interest2 = $interest2;
         $this->interest3 = $interest3;
         $this->avatar = $avatar;
-    }
+        $this->userID = $userID;
+    }/**
+ * @return int
+ */
+public function getUserID(): int
+{
+    return $this->userID;
+}/**
+ * @param int $userID
+ */
+public function setUserID(int $userID)
+{
+    $this->userID = $userID;
+}
 
     /**
      * @return mixed

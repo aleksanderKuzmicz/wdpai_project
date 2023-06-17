@@ -17,9 +17,11 @@ class SecurityController extends AppController{
     }
 
     public function login(){
+        session_start();
         if (!$this->isPost()) {
-            $this->render('login');
+            return $this->render('login');
         }
+
 
         $email = $_POST["email"];
         //$password = hash("sha256", $_POST["password"]);
@@ -39,11 +41,23 @@ class SecurityController extends AppController{
         if(!password_verify($password, $user->getPassword())) {
             $this->render('login', ['messages' => ['Wrong password.']]);
         }
+        $userID = $user->getUserID();
+        $_SESSION["user"] = htmlspecialchars($userID);
 
-        //        return $this->render('reviews');
+        $this->userRepository->addUserToSession($userID);
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/community");
 
+    }
+
+    public function logout() {
+        session_start();
+        $userID = $_SESSION["user"];
+        $this->userRepository->deleteUserFromSession($userID);
+        unset($_SESSION["user"]);
+        session_destroy();
+        $url = "http://$_SERVER[HTTP_HOST]";
+        header("Location: {$url}/login");
     }
 
     public function register()
@@ -89,15 +103,28 @@ class SecurityController extends AppController{
     }
 
     public function community() {
+        session_start();
+        if (empty($_SESSION["user"])) {
+            $url = "http://$_SERVER[HTTP_HOST]";
+            header("Location: {$url}/logout");
+            return null;
+        }
         $users = $this->userRepository->getUsers();
         $this->render("community", ["users" => $users]);
     }
     
     public function search_people() {
+//        if (empty($_SESSION["user"])) {
+////            return $this->render('login');
+//            $url = "http://$_SERVER[HTTP_HOST]";
+//            header("Location: {$url}/logout");
+//            return null;
+//        }
         $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : "";
         if ($contentType === "application/json") {
             $content = trim(file_get_contents("php://input"));
             $decoded_content = json_decode($content, true);
+            print_r($decoded_content);
             
             header("Content-type: application/json");
             http_response_code(200);
