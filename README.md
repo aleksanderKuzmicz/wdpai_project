@@ -1,5 +1,5 @@
-# Project name - TBD
-Simple app created to improve my Web Development skills.
+# Project name - Gosafe
+Service to share reviews of motorcycle accessories for motorcycle community
 
 ## Table od contents
 * [General info](#general-info)
@@ -13,8 +13,10 @@ Simple app created to improve my Web Development skills.
 
 
 ## General info
-This project was created as part of WDPAI classes.
-TBD
+To use the service, You should login (register). 
+After that user can read other reviewas or create his own.
+Remember to add image of reviewed product! :D
+
 
 ## Technologies
 * Nginx version: 1.17.8-alpine
@@ -22,24 +24,18 @@ TBD
 * Docker version: 3
 
 ## Setup
-To run the project, clone that repo and run  docker-compose:
+To run the project, 
+- clone that repo and run  docker-compose:
 
-```
-$ docker-compose up
-```
+    ```
+    $ docker-compose up
+    ```
 
-## Features
-* TBD
-* TBD
+- add credentials to connect to the database
 
-## Screenshots
-TBD
+## Entity Relationship Diagram
+![erd iimage](./public/img/erd.png)
 
-## Status
-In Progress
-
-## Inspiration
-TBD
 
 ## Contact
 Please feel free to contact me in case of any questions:
